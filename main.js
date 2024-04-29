@@ -80,8 +80,16 @@ btnGenerate.addEventListener('click', function(){
 
 
 reset.addEventListener('click', function() {
-    console.log("ho cliccato il bottone")
-    
+    console.log("ho cliccato il bottone di reset")
+
+    let userName = document.getElementById('name');//RECUPERA IL NOME DALL'UTENTE
+    userName.value = '';//RECUPERA IL VALORE DEL CAMPO DEL NOME 
+
+    let kmUser = document.getElementById('kmUser');//RECUPERA I KM DALL'UTENTE
+    kmUser.value = '';//RECUPERA IL VALORE DEL CAMPO DEI CHILOMETRI E LO CAMBIA DA STRING À NUMBER
+
+    let yearUser = document.getElementById('userAge');//RECUPERA L'ETA DALL'UTENTE
+    yearUser.value = '';//RECUPERA IL VALORE DEL CAMPO DELL'ETA  E LO CAMBIA DA STRING À NUMBER
 
 
 })
